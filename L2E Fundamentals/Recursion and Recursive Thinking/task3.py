@@ -3,9 +3,10 @@ def power(base, exponent):
         return 1
     if base == 0:
         return base
+    if exponent < 0:
+        exponent = abs(exponent)
 
-    if exponent >= 1 and base >= 1:
-        return base * power(base, exponent -1)
+    return base * power(base, exponent -1)
 
 base = int(input('Enter Your Base Number: '))
 exponent = int(input('Input Your Exponent: '))
