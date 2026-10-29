@@ -1,14 +1,14 @@
 def is_prime(num: int) -> bool:
-    if num == 2 or num == 3:
+    if num == 2:
         return True
-    if num <= 1: #or num % 2 == 0:
+    if num <= 1 or num % 2 == 0:
         return False
 
     i = 3
   
     while i*i <= num:
         if num % i == 0:
-            return False
+            return True
         i += 2
     return True
 
@@ -33,4 +33,4 @@ def prime_check(num: int):
 
 
 
-prime_check(13)
+is_prime(13)
