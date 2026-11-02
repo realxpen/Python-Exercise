@@ -6,10 +6,10 @@ def binary_search(nums, target) -> tuple[int, int]:
     if nums[0] == target:
         return (0, 1)
     
-    low = 0
-    high = len(nums) -1
-    comparisons = 0
-    result = -1
+    # low = 0
+    # high = len(nums) -1
+    # comparisons = 0
+    # result = -1
 
 
     def helper(low, high, comparisons, result):
