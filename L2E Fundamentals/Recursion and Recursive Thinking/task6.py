@@ -10,14 +10,14 @@ def is_palindrome(text) -> bool:
     return is_palindrome(text[1:len(text)-1])
 
 
-# def palindrome_check(text):
-#     if is_palindrome:
-#         print(f'{text} is a palindrome.') 
-#     else:
-#         print(f'{text} is Not a palindrome.')
+def palindrome_check(text):
+    if is_palindrome:
+        print(f'{text} is a palindrome.') 
+    else:
+        print(f'{text} is Not a palindrome.')
 
 
-# palindrome_check('racecar')
+palindrome_check('ar')
 
 
-print(is_palindrome("ar"))
+# print(is_palindrome("ar"))
